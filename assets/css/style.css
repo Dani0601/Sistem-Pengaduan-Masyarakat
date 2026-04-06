@@ -1,0 +1,147 @@
+/* CARD ANIMATION */
+.fitur-card {
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    background: white;
+}
+
+.fitur-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* ICON STYLE */
+.icon {
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.fitur-card:hover .icon {
+    transform: rotate(10deg) scale(1.2);
+}
+
+/* BUTTON ANIMATION */
+.btn {
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* HERO TEXT */
+h1 {
+    letter-spacing: 1px;
+}
+
+/* NAVBAR BACKGROUND */
+.custom-navbar {
+    background: linear-gradient(to right, #0d6efd, #6610f2);
+    padding: 12px 0;
+}
+
+/* NAV LINK */
+.nav-link {
+    position: relative;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+/* HOVER UNDERLINE ANIMATION */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* ACTIVE MENU */
+.nav-link.active {
+    font-weight: bold;
+}
+
+/* USER DROPDOWN */
+.user-menu {
+    background: rgba(255,255,255,0.2);
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.user-menu:hover {
+    background: rgba(255,255,255,0.35);
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+    border-radius: 10px;
+    animation: fadeDown 0.3s ease;
+}
+
+/* ANIMASI DROPDOWN */
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* BUTTON LOGIN */
+.btn-light {
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.btn-light:hover {
+    transform: scale(1.05);
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 80px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.fade-in-delay {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.2s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+    .fade-in {
+        animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+        from { opacity:0; transform:translateY(20px);}
+        to { opacity:1; transform:translateY(0);}
+    }
