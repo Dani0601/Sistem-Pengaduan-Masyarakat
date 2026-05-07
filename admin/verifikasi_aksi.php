@@ -8,4 +8,4 @@ mysqli_query($conn, "
 UPDATE users SET verified=1 WHERE id='$id'
 ");
 
-header("Location: verifikasi_user.php");
+header("Location: index.php?menu=verifikasi");

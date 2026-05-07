@@ -3,11 +3,7 @@ if(session_status() === PHP_SESSION_NONE){
     session_start();
 }
 
-// 🔒 CEK LOGIN USER
-if(!isset($_SESSION['login']) || $_SESSION['role'] !== 'user'){
-    header("Location: auth/login.php");
-    exit;
-}
+
 
 include 'config/koneksi.php';
 ?>

@@ -1,5 +1,8 @@
 <?php
 
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 include '../config/koneksi.php';
 
 if($_SESSION['role'] != 'admin'){
